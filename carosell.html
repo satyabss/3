@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Home </title>
+    </head>
+    <body>
+
+       <section class="part">
+            <div class="container-fluid">
+                <h1 id="book" style="color:#004b84" class="text-center">Choose Your Cab</h1>
+                <hr style="border: 1px solid white">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme" id="partenerrr">
+
+                            <div class="item">
+                                <center><img src="images/innova.png" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>Innova Crysta</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/mar2.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>New Ertiga</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/mar5.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>Indigo CS</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/mar6.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>Dzire</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/mar7.png" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>New Ertiga</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/offermar4.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>New Dzire</h4></small></div>
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/offermar9.jpg" class="img-fluid" alt="dbms">
+                                <div style="background: red; padding: 10px"><h4>Scorpio</h4></small></div>
+                                </center>
+                            </div>
+                            
+                            <div class="item">
+                                <center><img src="images/zest.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>Zest</h4></small></div>
+                                    </center>
+                            </div>
+                            <div class="item">
+                                <center><img src="images/ertiga.jpg" class="img-fluid" alt="dbms">
+                                <div style="background:red; padding: 10px"><h4>Ertiga</h4></div>
+
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+
+     <script>
+      $(document).ready(function(){
+        var owl = $('#partenerrr');
+        owl.owlCarousel({
+            loop:true,
+            nav:false,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            responsive:{
+
+                0:{
+
+                    items:1
+                },
+                375:{
+
+                    items:2
+                },
+                600:{
+
+                    items:3
+                },
+                960:{
+
+                    items:3
+                },
+                1200:{
+
+                    items:4
+                }
+            }
+        });
+      });
+    </script>
+    </body>
+</html>
