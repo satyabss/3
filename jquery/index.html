@@ -6,25 +6,172 @@
     <title>Learn jQuery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
 </head>
 <body>
   <section class="container">
       <div class="row">
           <div class="col-md-12">
-              <p>fgdf</p>
-              <p>hlokpo</p>
-              <p>iiuo</p>
-              <p>5ruiyiu</p>
+              
+
+    <p class='odd'>this is my body1</p>
+    <p id='second'>this is my body2</p>
+    <p class='odd'>this is my body3</p>
+    <p>this is my body4</p>
+<button id='but'>Toggle now</button>
+    <div id='sat'>SAMCO is India based online discount broker. It offers stock and commodity trading at NSE, BSE, and MCX. SAMCO's NBFC arm provide the margin funding, loan against shares and other financial products. It also offers depository services (demat account) through CDSL.
+    </div>
+
+    <form>
+        <input id='inp' type="text">
+        <textarea id='ta'> this is your value my text area</textarea>
+        
+    </form>
+
           </div>
       </div>
   </section>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script type="text/javascript">
-        // $('p').click(function(){
-        //     console.log('you clicked on p');
-        // });
+        $('p').click(function(){
+            console.log('you clicked on p');
+        });
         $('p').hide();
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+    console.log('I am in a new file now');
+
+    //Your jquery code here
+    console.log("We are using jQuery");
+    // jQuery Syntax looks like this
+    // $('selector').action()
+
+    //clicks on all the p elements.
+    // $('p').click(); //click on p
+    // $('p').click(function () {
+    //     console.log('you clicked on p', this);
+    //     //  $('#id').hide();
+    //     //  $('.class').hide();
+    // }); //do this when we click on p
+
+    // $('p').dblclick(function () {
+    //     console.log('you double clicked on p', this);
+    //     //  $('#id').hide();
+    //     //  $('.class').hide();
+    // });
+    // $('p').hover(function () {
+    //     console.log('you hoverd on: ', this);
+    //     //  $('#id').hide();
+    //     //  $('.class').hide();
+    // },
+    // function (){
+
+    //     console.log('Thanks for coming')
+    // });
+
+
+    // there are three main types of selectors in jQuery 
+    // 1. element selector
+    // 2. id selector
+    // 3. class selector
+
+    // 1. Element selector -  This is an example of element selector which clicks on all p
+    // $('p').click();
+
+    // 2. Id selector - this is an example of id selector
+    // $('#second').click();
+
+    // 3. Class selector - this is an example of id selector
+    // $('.odd').click();
+
+    // other selectors
+    // $('*').click() // clicks on all the elements
+    // $('p.odd').click() // clicks on all the elements
+    // $('p:first').click() // clicks on all the elements
+
+    // Events in jQuery
+    // Mouse events = click, dblclick, mouseenter, mouseleave
+    // KeyboardEvent = keypress, keydown, MediaKeyStatusMap
+    // form events = submit, change, focus, blur
+    // document/window events = load, resize, scroll, unload
+
+    // demoing the on method
+    $('p').on(
+        {
+            click: function () {
+                console.log('Thanks for clicking', this);
+            },
+            mouseleave: function () {
+                console.log("mouseleave");
+
+            }
+
+
+
+        })
+
+    // $('#sat').hide(1000, function () {
+    //     console.log("hidden");
+    // })   
+    // $('#sat').show(1000, function () {
+    //     console.log("show");
+    // })  
+    $('#but').click(function () {
+        $('#sat').fadeOut(5000);
+    })
+
+    //     fadeIn()
+    // fadeOut()
+    // fadeToggle()
+    // fadeTo()
+
+    // Slide methods - speed and callback parameters are optional
+    // $('#sat').slideUp(1000, function(){
+    //     console.log('done');
+    // })
+    // $('#sat').slideDown(1000)
+    // $('#sat').slideToggle(1000)
+
+    // Animate function in jQuery
+    // $('#sat').animate({
+    //     opacity:0.3,
+    //     height: '150px',
+    //     width:'350px'
+
+    // }, "fast")
+    // $('#sat').animate({ opacity: 0.3 }, 4000);
+    // $('#sat').animate({ opacity: 0.9 }, 1000);
+    // $('#sat').animate({ width: '350px' }, 12000);
+
+    // $('#ta').val('setting it to harry');
+    // $('#ta').html('setting it to harry');
+    // $('#ta').html('setting it to harry3');
+    // $('#inp').html('setting it to harry3');
+    // $('#inp').val('setting it to harry3');
+    // $('#inp').empty()
+    // $('#sat').empty()
+    // $('#sat').text('you are good')
+    // $('#sat').remove()
+
+    //     $('#sat').addClass('myclass')
+    // $('#sat').addClass('myclass2')
+    // $('#sat').removeClass('myclass2')
+    // $('#sat').css('background-color', 'red')
+    // $('#sat').css('background-color')
+
+    // AJAX Using jQuery
+    // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+
+    // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+    // $.post('https://code.jquery.com/jquery-3.3.1.js',
+    //     { name: 'harry', channel: 'code with harry' },
+    //     function (data, status) { alert(status) });
+
+});
+    </script>
+   
 </body>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
 
